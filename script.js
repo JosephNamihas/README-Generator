@@ -43,6 +43,12 @@ const promptUser = () =>
         name: 'projectContribution',
         message: 'Who is contributing to this project?',
     },
+
+    {
+        type: 'input',
+        name: 'projectTests',
+        message: 'What tests have been performed on this project?',
+    },
     {
         type: 'input',
         name: 'projectQuestions',
@@ -53,13 +59,35 @@ const promptUser = () =>
   ]);
 
   const generateREADME = (answers) =>
-  `# ${answers.projectTitle}
-  ## Description: ${answers.projectDescription}
-  ## Installation: ${answers.projectInstallation}
+  `# **${answers.projectTitle}**
+
+  ## **Description**
+  ${answers.projectDescription}
+
+  ## **Installation**
+   ${answers.projectInstallation}
+
+  ## **Table of Contents**
+    - ${answers.projectUsage}
+    - ${answers.projectLicense}
+    - ${answers.projectContribution}
+    - ${answers.projectQuestions}
+
+  ## **Usage**
   - ${answers.projectUsage}
+
+  ## **License**
   - ${answers.projectLicense}
+
+  ## **Project Contributions**
   - ${answers.projectContribution}
+
+  ## **Tests**
+  - ${answers.projectTests}
+
+  ## **FAQ**
   - ${answers.projectQuestions}
+
   `
 
   // Inline CSS? Bootstrap?
@@ -86,4 +114,4 @@ const promptUser = () =>
   // Asynchronous - wait until I get this data before DOM elements loaded into page
 
 
-  // 
+  // https://www.markdownguide.org/getting-started/
