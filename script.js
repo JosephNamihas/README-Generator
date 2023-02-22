@@ -19,9 +19,6 @@ const promptUser = () =>
       message: 'Enter project description:',
     },
 
-
-    // Enter a table of contents?
-
     {
       type: 'input',
       name: 'projectInstallation',
@@ -33,10 +30,10 @@ const promptUser = () =>
       message: 'How is your product used / accessed?',
     },
     {
-        // May need dropdown or a selection of options here (type dropdown?)
-      type: 'input',
+      type: 'checkbox',
       name: 'projectLicense',
       message: 'What license are you using?',
+       // Choice parameter
     },
     {
         type: 'input',
@@ -50,7 +47,7 @@ const promptUser = () =>
         message: 'What tests have been performed on this project?',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'projectQuestions',
         message: 'Enter your FAQ',
       },
@@ -64,29 +61,31 @@ const promptUser = () =>
   ## **Description**
   ${answers.projectDescription}
 
-  ## **Installation**
-   ${answers.projectInstallation}
-
   ## **Table of Contents**
-    - ${answers.projectUsage}
-    - ${answers.projectLicense}
-    - ${answers.projectContribution}
-    - ${answers.projectQuestions}
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  4. [Contributions](#contributions)
+  5. [Tests](#tests)
+  6. [FAQ](#faq)
+  7. [License](#license)
+
+  ## **Installation**
+  ${answers.projectInstallation}
 
   ## **Usage**
-  - ${answers.projectUsage}
+  ${answers.projectUsage}
 
-  ## **License**
-  - ${answers.projectLicense}
-
-  ## **Project Contributions**
-  - ${answers.projectContribution}
+  ## **Contributions**
+  ${answers.projectContribution}
 
   ## **Tests**
-  - ${answers.projectTests}
+  ${answers.projectTests}
 
   ## **FAQ**
-  - ${answers.projectQuestions}
+  ${answers.projectQuestions}
+
+  ## **License**
+  ${answers.projectLicense}
 
   `
 
