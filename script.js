@@ -22,7 +22,7 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'projectInstallation',
-      message: 'Enter Installation Instructions',
+      message: 'Enter installation instructions',
     },
     {
       type: 'input',
@@ -91,7 +91,7 @@ const promptUser = () =>
 
   ### Email
   Please contact me on the below e-mail address with any questions you may have
-  \n[joenamihas@yahoo.co.uk](${answers.projectQuestionsEmail})
+  \n[Click Here To Send Me An E-mail!](mailto:${answers.projectQuestionsEmail})
 
   ## **License**
 

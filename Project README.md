@@ -4,8 +4,6 @@
 
  I was tasked by the client to create a README generator to save time when doing project work. This will enable me to speedily develop a README and put more time into the development lifecycle. 
 
-
-
 ```
 AS A developer
 I WANT a README generator
@@ -48,6 +46,7 @@ If a new password is required, press it again.
 
 ## Useage
 
+![Inquirer](/assets/Inquirer.PNG)
 
 Video Here
 

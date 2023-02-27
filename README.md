@@ -1,7 +1,7 @@
 # **ReadME Generator**
 
   ## **Description**
-  Generates a README
+  A handy tool to generate a README on the fly! More time in development, less README writing. 
 
   ## **Table of Contents**
   1. [Installation](#installation)
@@ -12,16 +12,16 @@
   7. [License](#license)
 
   ## **Installation**
-  Run via Command Line
+  Enter your project installation instructions here.
 
   ## **Usage**
-  Via GitHub Pages
+  A guide to how to get the product, where it's accessed and how it's used
 
   ## **Contributions**
-  Me
+  Names of project participants. Who did what?
 
   ## **Tests**
-  Multiple run throughs
+  Current tests and tests completed. Maybe a list of known bugs and errors too? 
 
   ## **Questions**
   ### GitHub
