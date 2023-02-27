@@ -33,29 +33,33 @@ const promptUser = () =>
       type: 'checkbox',
       name: 'projectLicense',
       message: 'What license are you using?',
-       // Choice parameter
+      choices: ["MIT", "Apache", "GPLv2", "GPLv3"] // Add list of licenses here
     },
     {
         type: 'input',
         name: 'projectContribution',
         message: 'Who is contributing to this project?',
     },
-
     {
         type: 'input',
         name: 'projectTests',
         message: 'What tests have been performed on this project?',
     },
     {
-        type: 'list',
-        name: 'projectQuestions',
-        message: 'Enter your FAQ',
+        type: 'input',
+        name: 'projectQuestionsGitHub',
+        message: 'Enter your GitHub Username',
       },
-
+      {
+        type: 'input',
+        name: 'projectQuestionsEmail',
+        message: 'Enter your Email Address'
+      }
 
   ]);
 
   const generateREADME = (answers) =>
+
   `# **${answers.projectTitle}**
 
   ## **Description**
@@ -81,13 +85,24 @@ const promptUser = () =>
   ## **Tests**
   ${answers.projectTests}
 
-  ## **FAQ**
+  ## **Questions**
   ${answers.projectQuestions}
+  ### GitHub ***
+  ${answers.projectQuestionsGitHub}
+  *** Email ***
+  ${answers.projectQuestionsEmails}
+
 
   ## **License**
   ${answers.projectLicense}
 
   `
+// Depending on the answer of the License, it needs to generate the License Text and Logo
+// Must be easier way than storing them in an array - For ALL licenses??
+
+// https://shields.io/category/license // Badges
+
+
 
   // Inline CSS? Bootstrap?
 
@@ -109,8 +124,6 @@ const promptUser = () =>
   // Java Script Promises
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-
-  // Asynchronous - wait until I get this data before DOM elements loaded into page
 
 
   // https://www.markdownguide.org/getting-started/
