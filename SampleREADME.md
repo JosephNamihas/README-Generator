@@ -1,7 +1,7 @@
-# **ReadME Generator**
+# **What is the name of the project?**
 
   ## **Description**
-  A handy tool to generate a README on the fly! More time in development, less README writing. 
+  Enter a product description here
 
   ## **Table of Contents**
   1. [Installation](#installation)
@@ -12,16 +12,16 @@
   7. [License](#license)
 
   ## **Installation**
-  Enter your project installation instructions here.
+  How do you install the software? What dependencies does it require?
 
   ## **Usage**
-  A guide to how to get the product, where it's accessed and how it's used
+  How is the program accessed? Where and how is it used?
 
   ## **Contributions**
-  Names of project participants. Who did what?
+  List contributors here
 
   ## **Tests**
-  Current tests and tests completed. Maybe a list of known bugs and errors too? 
+  Tests that have been performed. What has passed / failed?
 
   ## **Questions**
   ### GitHub
@@ -30,7 +30,7 @@
   ### Email
   Please contact me on the below e-mail address with any questions you may have
   
-[joenamihas@yahoo.co.uk](joenamihas@yahoo.co.uk)
+[Click Here To Send Me An E-mail!](mailto:joenamihas@yahoo.co.uk)
 
   ## **License**
 

@@ -99,33 +99,9 @@ const promptUser = () =>
     "Apache" ? "Apache" + "" + '<br>' + "" + "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" : answers.projectLicense === "MIT" ? "MIT" + "" + '<br>' + "" + "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" : answers.projectLicense === "IBM" ? "IBM" + "" + '<br>' + "" + "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)" :  answers.projectLicense === "Perl" + "Perl" + '<br>' + "" + "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"}
 
   `
-// Depending on the answer of the License, it needs to generate the License Text and Logo
-// Must be easier way than storing them in an array - For ALL licenses??
-
-// https://shields.io/category/license // Badges
-
-
-
-  // Inline CSS? Bootstrap?
 
   promptUser()
-  .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
-  .then(() => console.log('Successfully wrote to README.md'))
+  .then((answers) => writeFileAsync('SampleREADME.md', generateREADME(answers)))
+  .then(() => console.log('Successfully wrote to SampleREADME.md'))
   .catch((err) => console.error(err));
 
-  
-  // npm install inquirer@6.5.0
-
-  // Change the index.html to README.md
-  // Change the generateHTML function to generateREADME
-  // Change the syntax of the HTML to reflect README syntax
-
-
-  // Promises - Any call to an API, will return a promise.
-  // A promise is telling the code "I promise you, I will deliver this bit"
-  // Java Script Promises
-
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-
-
-  // https://www.markdownguide.org/getting-started/
