@@ -30,10 +30,10 @@ const promptUser = () =>
       message: 'How is your product used / accessed?',
     },
     {
-      type: 'checkbox',
+      type: 'list',
       name: 'projectLicense',
       message: 'What license are you using?',
-      choices: ["MIT", "Apache", "GPLv2", "GPLv3"] // Add list of licenses here
+      choices: ["MIT", "Apache", "IBM", "Perl"] // Add list of licenses here
     },
     {
         type: 'input',
@@ -70,7 +70,7 @@ const promptUser = () =>
   2. [Usage](#usage)
   4. [Contributions](#contributions)
   5. [Tests](#tests)
-  6. [FAQ](#faq)
+  6. [Questions](#questions)
   7. [License](#license)
 
   ## **Installation**
@@ -86,15 +86,18 @@ const promptUser = () =>
   ${answers.projectTests}
 
   ## **Questions**
-  ${answers.projectQuestions}
-  ### GitHub ***
-  ${answers.projectQuestionsGitHub}
-  *** Email ***
-  ${answers.projectQuestionsEmails}
+  ### GitHub
+  [GitHub Account](https://github.com/${answers.projectQuestionsGitHub})
 
+  ### Email
+  Please contact me on the below e-mail address with any questions you may have
+  (mailto:${answers.projectQuestionsEmail})
 
   ## **License**
   ${answers.projectLicense}
+
+  ${answers.projectLicense === 
+    "Apache" ? "Apache" + "" + '<br>' + "" + "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" : answers.projectLicense === "MIT" ? "MIT" + "" + '<br>' + "" + "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" : answers.projectLicense === "IBM" ? "IBM" + "" + '<br>' + "" + "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)" :  answers.projectLicense === "Perl" + "Perl" + '<br>' + "" + "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"}
 
   `
 // Depending on the answer of the License, it needs to generate the License Text and Logo

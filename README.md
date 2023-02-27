@@ -1,7 +1,7 @@
-# **README Generator**
+# **Test**
 
   ## **Description**
-  A Node.JS CLI application that generates a README depending on user input - gathered by inquirer. It takes the installation, useage, contributions, tests, questions and license from the user and formats it into markdown through a JavaScript file
+  Test
 
   ## **Table of Contents**
   1. [Installation](#installation)
@@ -12,26 +12,28 @@
   7. [License](#license)
 
   ## **Installation**
-  Run the script and follow user input
+  Test
 
   ## **Usage**
-  Run the script and follow user input
+  Test
 
   ## **Contributions**
-  Solo project - Only myself. Joseph Namihas
+  Myself
 
   ## **Tests**
-  Multiple runs to check if 'types' compatible. IE, the checkbox for license checking. 
+  test
 
-  ## **Questions** // Add GitHub and E-Mail
-  undefined
-  ### GitHub ***
-  JosephNamihas
-  *** Email ***
-  undefined
+  ## **Questions**
+  ### GitHub
+  [GitHub Account](https://github.com/JosephNamihas)
 
+  ### Email
+  Please contact me on the below e-mail address with any questions you may have
+  (mailto:joenamihas@yahoo.co.uk)
 
   ## **License**
   MIT
+
+  MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   
