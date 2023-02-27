@@ -91,10 +91,9 @@ const promptUser = () =>
 
   ### Email
   Please contact me on the below e-mail address with any questions you may have
-  (mailto:${answers.projectQuestionsEmail})
+  \n[joenamihas@yahoo.co.uk](${answers.projectQuestionsEmail})
 
   ## **License**
-  ${answers.projectLicense}
 
   ${answers.projectLicense === 
     "Apache" ? "Apache" + "" + '<br>' + "" + "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" : answers.projectLicense === "MIT" ? "MIT" + "" + '<br>' + "" + "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" : answers.projectLicense === "IBM" ? "IBM" + "" + '<br>' + "" + "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)" :  answers.projectLicense === "Perl" + "Perl" + '<br>' + "" + "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"}
